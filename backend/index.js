@@ -1,6 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 
+app.use(cors());
 require("dotenv").config();
 const PORT = process.env.PORT || 4000;
 
@@ -9,7 +11,6 @@ app.use(cookieParser());
 app.use(express.json());
 require("./config/database").dbConnect();
 
-//import routes and mount it
 const user=require("./routes/user")
 app.use("/api/v1",user);
 

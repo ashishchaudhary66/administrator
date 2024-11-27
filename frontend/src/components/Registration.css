@@ -1,0 +1,53 @@
+.signin{
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 5rem;
+    background-color: skyblue;
+    border-radius: 1rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.user-login{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    justify-content: space-between;
+    align-items: center;
+}
+.remember-me{
+    display: flex;
+    align-items: center;
+}
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem
+}
+.input-type{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.password-type{
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.login-btn{
+    padding: 8px 10px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.error-message{
+    color: red;
+    font-size: x-small;
+}
