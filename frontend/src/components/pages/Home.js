@@ -86,6 +86,7 @@ function Home({ setIsAuthenticated }) {
         <button onClick={() => fetchUser ()}>Get Users</button>
         <button onClick={() => setUsers([])}>Clear Data</button>
       </div>
+      {error && <p className="error-message">{error}</p>}
       {users.length > 0 && (
         <table>
           <thead>
